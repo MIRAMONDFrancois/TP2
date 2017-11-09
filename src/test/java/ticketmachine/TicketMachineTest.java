@@ -27,12 +27,4 @@ public class TicketMachineTest {
 		assertEquals(10 + 20, machine.getBalance()); // Les montants ont été correctement additionnés               
 	}
 
-	
-	@Test
-	public void refundClearsBalance() {
-		machine.insertMoney(40); // On insère de l'argent
-		machine.refund(); // On appuie sur "cancel"
-		assertEquals(0, machine.getBalance()); // La balance est remise à 0
-	}	
-
 }
